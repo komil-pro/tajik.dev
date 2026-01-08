@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jura Service Support - website</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      color: #111;
+    }
+    h1 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Добрпо пожаловать на наш сайт!</h1>
+  </header>
+
+  <main>
+    <p>Это простой пример сайта с чатом службы поддержки.</p>
+    
+    <p>Можно написать в поддержку прямо здесь (справа внизу должен появиться значок чата).</p>
+  </main>
+
+  <footer>
+    <p>© 2026 — Jura Service Support</p>
+  </footer>
+  
+  
+<script>
+  window.chatwootSettings = {"position":"right","type":"standard","launcherTitle":"Свяжитесь с нами"};
+  (function(d,t) {
+    var BASE_URL="https://jura-support.tajik.dev";
+    var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=BASE_URL+"/packs/js/sdk.js";
+    g.async = true;
+    s.parentNode.insertBefore(g,s);
+    g.onload=function(){
+      window.chatwootSDK.run({
+        websiteToken: 'FB8nwdB458sDaPpNrftARqZn',
+        baseUrl: BASE_URL
+      })
+    }
+  })(document,"script");
+</script>
+
+
+</body>
+</html>
